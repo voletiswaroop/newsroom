@@ -1,0 +1,70 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 11px 30px;
+  z-index: 2;
+  background: var(--white);
+  box-shadow: 0 0 5px 3px hsla(0, 0%, 85%, .5);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header img {
+  height: 60px;
+  cursor: pointer;
+}
+
+header li {
+  float: left;
+  margin-left: 20px;
+  margin-bottom: 0;
+}
+
+header .navigation a {
+  text-decoration: none;
+  position: relative;
+  font-size: 18px;
+  padding: 33px 3px;
+  letter-spacing: .5px;
+  font-family: var(--sansRegular);
+}
+
+header .navigation a:after {
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: var(--black);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+header .navigation a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.scrollTop {
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  color: var(--white);
+  transition: all 0.3s ease;
+  opacity: .5;
+  background: var(--secondary-color);
+  padding: 11px 9px;
+  cursor: pointer;
+}
+
+.scrollTop i {
+  font-size: 30px;
+}
+
+.scrollTop:hover {
+  bottom: 67px;
+  opacity: 1;
+}
