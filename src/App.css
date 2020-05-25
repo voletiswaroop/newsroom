@@ -102,11 +102,11 @@ section {
   overflow: hidden;
 }
 
-section:nth-child(odd) {
+section:nth-child(even) {
   background-color: var(--white);
 }
 
-section:nth-child(even) {
+section:nth-child(odd) {
   background-color: var(--custom-white);
   padding: 40px 0;
 }

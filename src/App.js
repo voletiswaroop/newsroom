@@ -16,7 +16,7 @@ export default class App extends Component {
         <Header />
         <AboutMe />
         <SkillSet />
-        {/* <Experience /> */}
+        <Experience />
         <Projects />
         <Recognitions />
         <Education />

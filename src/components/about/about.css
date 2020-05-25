@@ -1,4 +1,4 @@
-.about-wrapper {
+section.about-wrapper {
   margin: 0;
   padding: 0;
 }
@@ -86,7 +86,7 @@
 }
 
 .project-development-process>div:hover {
-  background: var(--white);
+  background: var(--custom-white);
 }
 
 .project-development-process h4 {

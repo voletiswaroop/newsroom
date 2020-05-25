@@ -1,0 +1,29 @@
+{
+  "name": "covid19-india",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://voletiswaroop.github.io/covid19",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "0.9.5",
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.3.1",
+    "react-bootstrap": "^1.0.0-beta.5",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0",
+    "mixitup": "^3.3.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  }
+}

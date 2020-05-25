@@ -3,6 +3,7 @@ import './projects.css'
 import projectIcon from '../../assets/project-icon.png'
 import mixitup from 'mixitup';
 import covid from '../../assets/projectImgs/covid.png'
+import sgv from '../../assets/Slogo.jpg'
 import epoc from '../../assets/projectImgs/epocrates.png'
 import game from '../../assets/projectImgs/guessing-game.png'
 import atm from '../../assets/projectImgs/atm.png'
@@ -75,6 +76,18 @@ export default class projects extends Component {
                   </div>
                   <p className="project-name">COVID 19</p>
                   <div className="tech-stack">React, Javascript, CanvasJS, HTML and CSS</div>
+                  <span className="arrow"></span>
+                </a>
+                <span className="released-date">Personal project - 2020</span>
+              </div>
+              <div className="mix project-item javascript react">
+                <a target="_blank" href="https://voletiswaroop.github.io">
+                  <div className="valign">
+                    <img src={sgv} alt="Swaroop Gupta Voleti" />
+                  </div>
+                  <br />
+                  <p className="project-name">Swaroop Gupta Voleti</p>
+                  <div className="tech-stack">React, Javascript, HTML and CSS</div>
                   <span className="arrow"></span>
                 </a>
                 <span className="released-date">Personal project - 2020</span>
