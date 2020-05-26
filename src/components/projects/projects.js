@@ -41,10 +41,7 @@ export default class projects extends Component {
     return (
       <section className="projects-wrapper" id="projects">
         <div className="container">
-          <h3>
-            {/* <i className="fa fa-desktop" aria-hidden="true"></i> */}
-            <img src={projectIcon} alt="projects" />
-            Projects</h3>
+          <h3><img src={projectIcon} alt="projects" />Projects</h3>
           <div className="projects-completion-container">
             <div className="left-aligned">
               <div className="number-field">
@@ -90,7 +87,7 @@ export default class projects extends Component {
                   <div className="tech-stack">React, Javascript, HTML and CSS</div>
                   <span className="arrow"></span>
                 </a>
-                <span className="released-date">Personal project - 2020</span>
+                <span className="released-date">Rewamped @2020 - Initial release @2014</span>
               </div>
               <div className="mix project-item drupal javascript react cssfw">
                 <a target="_blank" href="https://www.epocrates.com/">

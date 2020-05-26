@@ -8,7 +8,7 @@ import innoswiftLogo from '../../assets/companyLogos/innoswift.png'
 export default class experience extends Component {
   render() {
     return (
-      <section className="experience-wrapper">
+      <section className="experience-wrapper" id="experience">
         <div className="container">
           <h3><i className="fa fa-motorcycle" aria-hidden="true"></i>Career Journey</h3>
           <ul className="experience-list">
