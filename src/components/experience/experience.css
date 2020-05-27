@@ -15,6 +15,10 @@
   align-items: center;
 }
 
+.experience-list a:hover h4 {
+  text-decoration: underline;
+}
+
 .experience-list li h4 {
   font-size: 18px;
   color: var(--secondary-color);

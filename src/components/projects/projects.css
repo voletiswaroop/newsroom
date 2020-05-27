@@ -94,9 +94,13 @@
   justify-content: space-around;
 }
 
+.personal-projects {
+  margin-top: 30px;
+}
+
 .portfolio-list>div {
   width: calc(92%/3);
-  min-height: 250px;
+  /* min-height: 250px; */
   background: var(--white);
   margin-bottom: 20px;
   border-radius: 10px;
@@ -213,6 +217,6 @@
     margin-bottom: 30px;
   }
   .portfolio-list>div {
-    width: 90%;
+    width: 100%;
   }
 }

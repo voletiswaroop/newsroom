@@ -9,14 +9,14 @@ export default class about extends Component {
         <div className="banner-wrapper">
           <div className="overlay-section">
             <div className="overlay-container">
-              <h1 className="title">Hi! I'm Swaroop. <br /> Nice to meet you.</h1>
-              <p>I write robust code to convert your <i>ideas or designs</i> into <i>reality</i>.</p>
+              <h1 className="title">Hi! <br />I'm Swaroop. <br /> Nice to meet you.</h1>
+              <p>I write robust code to convert your <i>ideas &amp; designs</i> into <i>reality</i>.</p>
             </div>
           </div>
         </div>
         <div className="container">
           <h3 className="user-profile"><img src={Swaroop} alt="Swaroop gupta voleti" />About me</h3>
-          <p>Since beginning my journey as a frontend Developer nearly 9 years ago, I have very strong experience in building responsive/adaptive user interface web apps (Desktops, Tablets &amp; Mobiles). In my experience I have worked on many projects (each project is from scrach) in different industries like E-Commerce, Mobile, Banking and Healthcare. I'm quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time.</p>
+          <p>I started my journey as a Frontend Developer in 2012. I have <b>extensive experience</b> in building responsive and adaptive user interfaces for web apps catering to a spectrum of devices such as Desktops, Tablets &amp; Mobiles. I have worked on many projects in different sectors such as E-Commerce, Mobile, Banking and Healthcare, all of them are from scratch. I am inquisitive, confident and perpetually working on improving my chops one design problem at a time.</p>
         </div>
         <div className="project-development-process container">
           <div className="research">
@@ -25,11 +25,11 @@ export default class about extends Component {
           </div>
           <div className="analyze">
             <h4><i className="fas fa-file-signature"></i>Analyze</h4>
-            <div>Put findings from the research and buliding test cases for the client requirements and start building POC's and Spikes</div>
+            <div>Implement findings from the research and building test cases for the client requirements and start creating POC's and Spikes</div>
           </div>
           <div className="develop">
             <h4><i className="fas fa-laptop-code"></i>Develop</h4>
-            <div>I will put all my findings from the research and analyze phases are utilized to convert your <i>ideas or designs</i> into website and that runs seemlessly across all the browsers and devices using latest web trands.</div>
+            <div>Curate all the findings from the research and analyse which phases are to be utilised to convert the <i>ideas and designs</i> into website and that runs seamlessly across all the browsers and devices using latest web trends.</div>
           </div>
         </div>
       </section>
