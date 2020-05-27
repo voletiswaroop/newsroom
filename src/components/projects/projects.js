@@ -3,7 +3,8 @@ import './projects.css'
 import projectIcon from '../../assets/project-icon.png'
 import mixitup from 'mixitup';
 import covid from '../../assets/projectImgs/covid.png'
-// import sgv from '../../assets/Slogo.jpg'
+import sgv from '../../assets/Slogo.jpg'
+import stopWatch from '../../assets/projectImgs/stopwatch.png'
 import alljobsindia from '../../assets/projectImgs/alljobsindia.jpg'
 import tuts from '../../assets/projectImgs/tuts.jpg'
 import game from '../../assets/projectImgs/guessing-game.png'
@@ -174,7 +175,7 @@ export default class projects extends Component {
                 </a>
                 <span className="released-date">2020</span>
               </div>
-              {/* <div className="mix project-item javascript react">
+              <div className="mix project-item javascript react">
                 <a target="_blank" href="https://voletiswaroop.github.io">
                   <div className="valign">
                     <img src={sgv} alt="Swaroop Gupta Voleti" />
@@ -185,7 +186,19 @@ export default class projects extends Component {
                   <span className="arrow"></span>
                 </a>
                 <span className="released-date">Rewamped @2020 - Initial release @2014</span>
-              </div> */}
+              </div>
+              <div className="mix project-item javascript react">
+                <a target="_blank" href="https://github.com/voletiswaroop/reactLearning/tree/develop/src/components/stopWatch">
+                  <div className="valign">
+                    <img src={stopWatch} alt="React stopwatch" />
+                  </div>
+                  <br />
+                  <p className="project-name">React Stopwatch</p>
+                  <div className="tech-stack">React, Javascript, HTML and CSS</div>
+                  <span className="arrow"></span>
+                </a>
+                <span className="released-date">2019</span>
+              </div>
               <div className="mix project-item javascript">
                 <a target="_blank" href="https://github.com/voletiswaroop/mind-guessing-game">
                   <div className="valign">
