@@ -85,7 +85,7 @@ export default class projects extends Component {
                   <div className="tech-stack">ReactJs, Javascript, HTML, Stylus and Drupal</div>
                   <span className="arrow"></span>
                 </a>
-                <span className="released-date">Rewamped @2016 - Redesigned @2019</span>
+                <span className="released-date">Revamped @2016 - Redesigned @2019</span>
               </div>
               <div className="mix project-item drupal javascript react cssfw">
                 <a target="_blank" href="https://www.athenahealth.com/">
@@ -94,7 +94,7 @@ export default class projects extends Component {
                   <div className="tech-stack">ReactJs, Javascript, HTML, Stylus, Material form and Drupal</div>
                   <span className="arrow"></span>
                 </a>
-                <span className="released-date">Rewamped @2017 - Redesigned @2018</span>
+                <span className="released-date">Revamped @2017 - Redesigned @2018</span>
               </div>
               <div className="mix project-item bootstrap javascript cssfw">
                 <a target="_blank" href="https://www.bankbazaar.com/">
@@ -185,7 +185,7 @@ export default class projects extends Component {
                   <div className="tech-stack">React, Javascript, HTML and CSS</div>
                   <span className="arrow"></span>
                 </a>
-                <span className="released-date">Rewamped @2020 - Initial release @2014</span>
+                <span className="released-date">Revamped @2020 - Initial release @2014</span>
               </div>
               <div className="mix project-item javascript react">
                 <a target="_blank" href="https://github.com/voletiswaroop/reactLearning/tree/develop/src/components/stopWatch">

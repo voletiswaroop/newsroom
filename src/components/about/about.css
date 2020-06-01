@@ -4,41 +4,62 @@ section.about-wrapper {
 }
 
 .banner-wrapper {
-  background-image: url('../../assets/banner.jpg');
-  background-size: cover;
-  height: 460px;
-  width: 100%;
-  margin: 0 0 30px;
-}
-
-.overlay-section {
-  background: rgba(0, 0, 0, 0.5);
-  height: 100%;
-  width: 100%;
+  margin: 30px 0;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  max-height: 60vh;
+  overflow: hidden;
   text-align: center;
+  justify-content: space-around;
 }
 
-.overlay-container {
-  padding-top: 170px;
+.banner-wrapper img {
+  height: 100%;
+  max-height: 60vh;
 }
 
 .title {
-  color: var(--white);
+  color: var(--black);
   font-size: 50px;
   font-weight: 700;
   margin-bottom: 15px;
   line-height: normal;
   overflow: hidden;
+  font-family: var(--elegance);
+  letter-spacing: .5px;
 }
 
-.overlay-container>p {
-  color: var(--white);
-  font-size: 18px;
-  font-weight: 300;
-  margin-bottom: 38px;
+.title span {
+  font-size: inherit;
+  font-family: var(--sansRegular);
+}
+
+.left-aligned p i:nth-child(1) {
+  color: var(--secondary-color);
+}
+
+.left-aligned p i:nth-child(2) {
+  color: var(--primary-color);
+}
+
+.follow-section {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.follow-section li {
+  display: inline-block;
+  margin: 0 0 0 20px;
+}
+
+.follow-section li i {
+  color: #666;
+  font-size: 25px;
+  transition: all 0.3s ease;
+}
+
+.follow-section li i:hover {
+  color: var(--black);
 }
 
 .about-wrapper .user-profile {
@@ -101,4 +122,26 @@ h4 i {
   font-size: inherit;
   margin-right: 10px;
   color: var(--secondary-color);
+}
+
+@media screen and (max-width: 768px) {
+  .banner-wrapper {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    max-height: none;
+  }
+  .title {
+    font-size: 30px;
+  }
+  .banner-wrapper img {
+    margin-bottom: 20px;
+    max-height: 35vh;
+  }
+  .project-development-process {
+    flex-direction: column;
+  }
+  .project-development-process>div {
+    width: 100%;
+    padding: 0 0 30px;
+  }
 }

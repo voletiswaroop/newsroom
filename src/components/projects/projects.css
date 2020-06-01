@@ -219,7 +219,7 @@
   .number-field {
     margin-bottom: 30px;
   }
-  .portfolio-list>div {
+  .projects-completion-container>div, .portfolio-list>div {
     width: 100%;
   }
 }

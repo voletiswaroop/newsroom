@@ -3,7 +3,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  padding: 11px 30px;
+  padding: 10px 30px 5px;
   z-index: 2;
   background: var(--white);
   box-shadow: 0 0 5px 3px hsla(0, 0%, 85%, .5);
@@ -12,9 +12,20 @@ header {
   justify-content: space-between;
 }
 
-header img {
-  height: 60px;
+header .logo {
+  display: flex;
+  align-items: center;
   cursor: pointer;
+}
+
+header .logo img:nth-child(1) {
+  height: 30px;
+  margin-right: 5px;
+}
+
+header .logo img:nth-child(2) {
+  height: 45px;
+  margin-top: 4px;
 }
 
 header li {
@@ -24,23 +35,22 @@ header li {
 }
 
 header .navigation a {
-  text-decoration: none;
   position: relative;
   font-size: 18px;
-  padding: 33px 3px;
+  padding: 19px 3px;
   letter-spacing: .5px;
   font-family: var(--sansRegular);
 }
 
 header .navigation a:after {
   content: "";
-  display: block;
   height: 2px;
   left: 50%;
   position: absolute;
   background: var(--black);
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
+  bottom: 18px;
 }
 
 header .navigation a:hover:after {
@@ -67,4 +77,102 @@ header .navigation a:hover:after {
 .scrollTop:hover {
   bottom: 67px;
   opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .header-wrapper {
+    padding: 5px 15px
+  }
+  header .logo img:nth-child(1) {
+    height: 25px;
+  }
+  header .logo img:nth-child(2) {
+    height: 40px;
+  }
+  .navlines {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    transition: .5s ease-in-out;
+    z-index: 2;
+    float: right;
+    margin: 15px 0;
+    cursor: pointer;
+  }
+  .navlines span {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: var(--black);
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transition: all .5s ease;
+  }
+  .navlines span:first-child {
+    top: 0;
+  }
+  .navlines span:nth-child(2) {
+    top: 10px;
+    width: 18px;
+  }
+  .navlines span:nth-child(3) {
+    top: 20px;
+  }
+  .show-subnav .navlines span {
+    height: 2px;
+  }
+  .show-subnav .navlines span:first-child {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 50%;
+  }
+  .show-subnav .navlines span:nth-child(2) {
+    width: 0;
+    opacity: 0;
+  }
+  .show-subnav .navlines span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 50%;
+  }
+  .navigation {
+    position: fixed;
+    height: 100%;
+    top: 0;
+    right: -65vw;
+    background: #fff;
+    box-shadow: 0 0 5px 3px hsla(0, 0%, 85%, .5);
+    width: 60vw;
+    z-index: 1;
+    transition: .5s ease-in-out;
+  }
+  .show-subnav .navigation {
+    right: 0;
+  }
+  .navigation ul {
+    clear: both;
+    border-top: 1px solid #bbb;
+    margin-top: 65px;
+  }
+  .navigation li {
+    margin: 0;
+    text-align: right;
+    border-bottom: 1px solid #bbb;
+    float: none;
+  }
+  header .navigation a {
+    text-align: right;
+    padding: 10px 15px;
+    display: block;
+  }
+  header .navigation a:after {
+    bottom: -1px;
+    background: #bbb;
+  }
 }
