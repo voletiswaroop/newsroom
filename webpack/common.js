@@ -1,24 +1,48 @@
-// webpack.config.js
+const join = require('path').join;
+
 module.exports = {
-  module: {
-    loaders: [
-      { exclude: ['node_modules'], loader: 'babel', test: /\.jsx?$/ },
-      { loader: 'style-loader!css-loader', test: /\.css$/ },
-      { loader: 'url-loader', test: /\.gif$/ },
-      { loader: 'file-loader', test: /\.(ttf|eot|svg)$/ },
-    ],
+  output: {
+    path: join(__dirname, '../../public/assets/resources'),
+    publicPath: '/resources/'
   },
   resolve: {
-    alias: {
-      config$: './configs/app-config.js',
-      react: './vendor/react-master',
-    },
-    extensions: ['', 'js', 'jsx'],
-    modules: [
-      'node_modules',
-      'bower_components',
-      'shared',
-      '/shared/vendor/modules',
-    ],
+    extensions: ['.js'],
+    modules: [join(__dirname, '../../node_modules'), join(__dirname, '../../src')]
   },
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: 'babel-loader'
+      }, {
+        test: /\.styl/,
+        exclude: /node_modules/,
+        use: [
+          {
+            loader: 'css-loader/locals',
+            options: {
+              modules: true,
+              localIdentName: '[name]__[local]--[hash:base64:5]'
+            }
+          },
+          {
+            loader: 'stylus-loader'
+          }
+        ]
+      },
+      {
+        test: /\.(png|jpg|gif|otf|woff|ttf|ico)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              modules: true,
+              localIdentName: '[name]__[local]--[hash:base64:5]'
+            }
+          }
+        ]
+      }
+    ]
+  }
 };

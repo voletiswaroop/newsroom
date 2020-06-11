@@ -1,21 +1,39 @@
 {
-  "name": "swaroop-gupta-voleti",
+  "name": "newsroom-webapp",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://voletiswaroop.github.io",
-  "dependencies": {
-    "axios": "^0.19.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "0.9.5"
+  "description": "Newsroom app with server side rendering",
+  "homepage": "https://voletiswaroop.github.io/newsroom",
+  "author": {
+    "name": "Swaroop Gupta Voleti"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "node public/index",
+    "build": "npm-run-all -p build:client build:server build:node build-css",
+    "build:client": "cross-env NODE_ENV=production webpack --config webpack/client/prod.js",
+    "build:server": "cross-env NODE_ENV=production webpack --config webpack/server/prod.js",
+    "build:node": "cross-env NODE_ENV=production webpack --config webpack/node.js",
     "test": "jest",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(css|styl)$": "identity-obj-proxy"
+    }
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "express": "^4.17.1",
+    "helmet": "^3.12.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^5.2.0",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "0.9.5",
+    "webpack-flush-chunks": "^2.0.0"
   },
   "devDependencies": {
     "jest": "^26.0.1"

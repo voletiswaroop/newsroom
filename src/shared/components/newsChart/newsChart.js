@@ -23,7 +23,6 @@ export default class newsChart extends Component {
 				label: item.objectID
 			})
 		}) : ''
-		console.log(newsChartData, 'newsChartData');
 		const newsChart = {
 			animationEnabled: true,
 			exportEnabled: false,
@@ -46,8 +45,6 @@ export default class newsChart extends Component {
 				dataPoints: newsChartData
 			}]
 		}
-		console.log(newsChart, 'newsChart');
-
 		return (
 			<div className="newsroom-chart">
 				<CanvasJSChart options={newsChart} />
