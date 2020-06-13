@@ -1,7 +1,7 @@
 import React from 'react';
 import { hydrate } from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
-import App from '../../shared/App';
+import App from '../shared/App';
 
 const globaldata = JSON.stringify(window.__PRELOADED_STATE__GLOBAL_);
 const pageJson = JSON.stringify(window.__PRELOADED_STATE__PAGEJSON_);
@@ -31,8 +31,8 @@ render(App);
  * This script provides hot module reloading in development mode.
  */
 if (module.hot) {
-  module.hot.accept('../../shared/App', () => {
-    const App = require('../../shared/App').default;
+  module.hot.accept('../shared/App', () => {
+    const App = require('../shared/App').default;
     render(App);
   });
 }

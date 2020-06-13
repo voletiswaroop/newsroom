@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/server';
 import { flushChunkNames } from 'react-universal-component/server';
 import flushChunks from 'webpack-flush-chunks';
 import Helmet from 'react-helmet';
-import App from '../../shared/App';
+import App from '../shared/App';
 import axios from 'axios';
 import { StaticRouter } from 'react-router';
 
