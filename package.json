@@ -1,0 +1,73 @@
+{
+  "name": "newsroom-webapp",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Newsroom app with server side rendering",
+  "homepage": "https://voletiswaroop.github.io/newsroom",
+  "author": {
+    "name": "Swaroop Gupta Voleti"
+  },
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node public/index",
+    "dev": "cross-env NODE_ENV=development babel-node src/index",
+    "watch": "cross-env NODE_ENV=development babel-watch src/index",
+    "build": "npm run build:client && npm run build:server && npm run build:node",
+    "build:client": "cross-env NODE_ENV=production webpack -p --config webpack/client.production.js",
+    "build:server": "cross-env NODE_ENV=production webpack -p --config webpack/server.production.js",
+    "build:node": "cross-env NODE_ENV=production webpack -p --config webpack/node.production.js",
+    "test": "jest --coverage  -c src/config/jest.client.config.json",
+    "test:update": "jest --updateSnapshot  -c src/config/jest.client.config.json",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(css|styl)$": "identity-obj-proxy"
+    }
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "babel-polyfill": "^6.26.0",
+    "express": "^4.17.1",
+    "helmet": "^3.12.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^5.2.0",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "0.9.5",
+    "react-universal-component": "^3.0.0",
+    "webpack-flush-chunks": "^2.0.0",
+    "winston": "^2.4.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-plugin-universal-import": "^2.0.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "extract-css-chunks-webpack-plugin": "^3.0.5",
+    "cross-env": "^5.1.4",
+    "css-hot-loader": "^1.3.9",
+    "css-loader": "^0.28.11",
+    "jest": "^23.6.0",
+    "jest-html-reporters": "^1.1.8",
+    "jest-junit": "^5.2.0",
+    "stats-webpack-plugin": "^0.6.2",
+    "style-loader": "^0.20.3",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-middleware": "^3.1.2",
+    "webpack-hot-middleware": "^2.21.2",
+    "webpack-hot-server-middleware": "^0.5.0",
+    "webpack-merge": "^4.1.2"
+  }
+}
