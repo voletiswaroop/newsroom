@@ -4,8 +4,6 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://kit.fontawesome.com/1ec50ae74a.js" crossorigin="anonymous" SameSite="none"></script>
-
   <%- title %>
   <%- meta %>
   <%- link %>
@@ -13,15 +11,14 @@
 </head>
 
 <body>
-  <div id="root"><%- appString %></div>
+  <div id="react-root"><%- appString %></div>
   <script>
-
   <% if (typeof globaldata !== 'undefined' && globaldata) { %>
-      window.__PRELOADED_STATE__GLOBAL_ = <% - globaldata %>
+      window.__PRELOADED_STATE__GLOBAL_ = <%- globaldata %>
 	<% } %>
    
     <% if (typeof pageJson !== 'undefined' && pageJson) { %>
-      window.__PRELOADED_STATE__PAGEJSON_ = <% - pageJson %>
+      window.__PRELOADED_STATE__PAGEJSON_ = <%- pageJson %>
     <% } %>
 
   </script>

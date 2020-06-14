@@ -2,7 +2,7 @@ const merge = require('webpack-merge');
 const webpack = require('webpack');
 const common = require('./common');
 const join = require('path').join;
-const nodeExternals = require('./scripts/node-externals');
+const nodeExternals = require('../scripts/node-externals');
 
 module.exports = merge(common, {
   mode: 'development',
