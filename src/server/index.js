@@ -19,8 +19,8 @@ export default ({ clientStats }) => async (request, response) => {
   var callAPI = 'https://hn.algolia.com/api/v1/search?tags=front_page';
   axios.get(callAPI)
     .then(data => {
-      const globalData = data.data;
-      const pageJson = data.data.hits;
+      const globalData = JSON.stringify(data.data);
+      const pageJson = JSON.stringify(data.data.hits);
       const app = (
         <div className="ahc-redesign">
           <StaticRouter location={request.url} context={{}}>
