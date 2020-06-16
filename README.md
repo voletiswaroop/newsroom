@@ -47,4 +47,4 @@ $ npm run dev
 
 ## Mobile View
 
-![Mobile demo](https://raw.githubusercontent.com/voletiswaroop/newsroom/master/src/shared/demoImages/mobile.jpg)
+![Mobile demo](https://raw.githubusercontent.com/voletiswaroop/newsroom/master/src/shared/demoImages/mobile.png)
