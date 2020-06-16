@@ -43,8 +43,8 @@ $ npm run dev
 
 ## Desktop View
 
-![Desktop demo](https://raw.githubusercontent.com/voletiswaroop/newsroom/master/src/demoImages/desktop.png)
+![Desktop demo](https://raw.githubusercontent.com/voletiswaroop/newsroom/master/src/shared/demoImages/desktop.png)
 
 ## Mobile View
 
-![Mobile demo](https://raw.githubusercontent.com/voletiswaroop/newsroom/master/src/demoImages/mobile.jpg)
+![Mobile demo](https://raw.githubusercontent.com/voletiswaroop/newsroom/master/src/shared/demoImages/mobile.jpg)
