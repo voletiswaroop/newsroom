@@ -42,9 +42,9 @@ export default class newsChart extends Component {
       }]
     }
     return (
-      <div className="newsroom-chart">
+      <section className="newsroom-chart">
         <CanvasJSChart options={newsChart} />
-      </div>
+      </section>
     );
   }
 }

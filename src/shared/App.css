@@ -33,3 +33,10 @@ a {
   overflow: hidden;
   padding: 20px 0;
 }
+
+h2 {
+  font-size: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+}

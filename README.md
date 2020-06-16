@@ -11,7 +11,7 @@ $ npm i
 $ npm start
 ```
 
-This fires up the development server on port `3000`.
+This fires up the development server on port `5000`.
 
 You can now choose to either start developing your react application or
 to enhance the express server according to your needs.
@@ -38,3 +38,13 @@ the following:
 $ npm run build
 $ npm run dev
 ```
+
+#Newsroom Demo
+
+## Desktop View
+
+![Desktop demo](https://raw.githubusercontent.com/voletiswaroop/newsroom/master/src/demoImages/desktop.png)
+
+## Mobile View
+
+![Mobile demo](https://raw.githubusercontent.com/voletiswaroop/newsroom/master/src/demoImages/mobile.jpg)
