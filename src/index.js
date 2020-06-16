@@ -77,7 +77,7 @@ app.use(function (req, res, next) {
 });
 
 app.set('view engine', 'ejs');
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 5000);
 
 if (isDevelopment) {
 	configureDevelopment(app);

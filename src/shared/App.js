@@ -28,13 +28,11 @@ export default class App extends Component {
   render() {
     let json = {};
     json.globaldata = this.props.globaldata ? JSON.parse(this.props.globaldata) : '';
-    json.pageJson = (this.props.pageJson) ? JSON.parse(this.props.pageJson) : '';
-    if (this.props.globaldata) {
-      let timestamp = JSON.parse(this.props.globaldata).time;
-      console.log(timestamp, 'timestamp')
-    }
+    json.pageJson = this.props.pageJson ? JSON.parse(this.props.pageJson) : '';
+    this.props.globaldata ? JSON.parse(this.props.globaldata).time : '';
     return (
-      <div className="page-wrapper">
+      <div className="page-wrapper" >
+        {this.setMetainfo()}
         <UniversalComponent name="homePage" content={json.pageJson} />
         <UniversalComponent name="newsChart" content={json.pageJson} />
       </div>
