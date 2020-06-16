@@ -39,7 +39,7 @@ $ npm run build
 $ npm run dev
 ```
 
-#Newsroom Demo
+# Newsroom webapp Demo
 
 ## Desktop View
 
